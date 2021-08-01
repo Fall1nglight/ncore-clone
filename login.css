@@ -1,0 +1,16 @@
+/* body {
+  background-image: url('./login_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: black;
+} */
+
+body {
+  background-color: black;
+}
+
+#inputUsername,
+#inputPassword {
+  background-color: #ccc;
+  border-color: #a6a6a6;
+}
