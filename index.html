@@ -30,7 +30,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark p-3 mb-sm-5">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark p-3">
         <div class="container-fluid">
           <a href="#!" class="navbar-brand">nCore</a>
           <button
@@ -100,13 +100,19 @@
     <!-- TODO: 1 menüsör elkészítése vagy meghagyni 2db-ban, mint az eredetiben -->
     <!-- TODO: Navbar html kódjának letisztítása  -->
     <!-- TODO: Navbar menü átdolgozása. Ikonok egy dropdown-ba breakpoint alapján -->
-    <!-- TODO: Padding, margin refactor (pt-5 container-re) -->
+    <!-- TODO: Padding, margin, background-color összhang -->
+
+    <!-- TODO: mainContent -> card layout alkalmazása (ne tűnjön el a hírdetés) -->
+    <!-- TODO: font size & family beállítása -->
+    <!-- ? Horizontal card style  -->
+    <!-- ? hr eltávolítása a kártyáknál -> túl sok elem ismétlés -->
+
     <!-- Main start -->
     <main>
       <!-- Navigation section start -->
-      <section class="p-md-5" id="mainMenu">
-        <div class="container">
-          <ul class="nav justify-content-center" id="secondaryNav">
+      <section id="mainMenu">
+        <div class="container custom-bg px-5 pt-5 py-3">
+          <div class="nav justify-content-center" id="secondaryNav">
             <a href="#!" class="nav-link link-light">Főoldal</a>
 
             <a href="#!" class="nav-link link-light">Letöltés</a>
@@ -126,33 +132,195 @@
             <a href="#!" class="nav-link link-light">Helpdesk</a>
 
             <a href="#!" class="nav-link link-light">Kilépés</a>
-          </ul>
-
+          </div>
           <hr class="text-light" />
         </div>
         <!-- Navigation section end -->
       </section>
 
       <!-- Feed section start -->
-      <section class="" id="feed">
-        <div class="container p-5">
-          <div class="d-flex justify-content-end">
-            <div class="h6">asd</div>
-          </div>
+      <section id="feed">
+        <div class="container custom-bg px-5 py-3">
+          <div class="row g-5 align-items-center">
+            <!-- Item-group-1 -->
 
-          <div class="card text-center text-light bg-dark">
-            <div class="card-header">Featured</div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="col-12 col-sm-8">
+              <div class="card bg-dark text-light">
+                <h5 class="card-header text-end fs-6">
+                  <a href="#!" class="link-light text-decoration-none"
+                    >Hírt olvasottnak jelölni!</a
+                  >
+                </h5>
+
+                <div class="card-body">
+                  <div class="card-title h5 mb-3">- Nyári kvízek 2021 -</div>
+                  <div class="card-text">
+                    Kedves Felhasználóink!
+                    <br />
+                    A húsvéti kvíz folytatásaként ismét készültünk nektek
+                    kvízekkel, amelyek hetente fognak némi frissítést adni a
+                    szürkeállománynak, hogy ne lustuljon el a nyár folyamán.
+                    <br />
+                    Aki egy adott kvíz minden kérdésre helyesen válaszol, 2000
+                    pont jutalomban részesül.
+                    <br />
+                    Az első kvíz ma 17:00-tól indul, melynek elérhetőségét a
+                    fórumban találjátok meg.
+                  </div>
+                </div>
+
+                <div class="card-footer text-muted text-center">
+                  Hír létrehozva 6 napja | nCore Staff
+                </div>
+              </div>
             </div>
-            <div class="card-footer text-muted">2 days ago</div>
+
+            <div class="col-4 d-none d-sm-block">
+              <div class="card bg-dark text-light text-center">
+                <div class="text-center">
+                  <img
+                    src="https://ba0a3efb26db67f2.cdn.l7cache.com/proxy/03f314311adf42b28d9cd97d11ce136b/https://hessteg.com/wp-content/uploads/2021/07/r_ido.png"
+                    class="asd my-2"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="#!" class="text-danger">Idö (2021) - kritika</a>
+                  </h5>
+                  <p class="card-text text-muted">
+                    M. Night Shyamalan új filmjétől eldobod az agyad. De a jó
+                    értelemben? Kritikánkból kiderül.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item-group-2 -->
+
+            <hr class="text-light" />
+
+            <div class="col-12 col-sm-8">
+              <div class="card bg-dark text-light">
+                <h5 class="card-header text-end fs-6">
+                  <a href="#!" class="link-light text-decoration-none"
+                    >Hírt olvasottnak jelölni!</a
+                  >
+                </h5>
+
+                <div class="card-body">
+                  <div class="card-title h5 mb-3">
+                    - Prémium változások és további fejlesztések -
+                  </div>
+                  <div class="card-text">
+                    Kedves Felhasználóink!
+                    <br />
+                    Az elmúlt időszakban a Prémium rendszerrel kapcsolatban
+                    végeztünk fejlesztéseket. Ennek keretében többek között a
+                    Prémium menü kinézetét alakítottuk át annak érdekében, hogy
+                    jobban áttekinthető, könnyebben kezelhető legyen. Ezzel a
+                    Letöltés és a Meghívó oldal mellett ez lett a harmadik
+                    menüpont, ahol az új Béta felülettel találkozhattok.
+                    <br />
+                    A kezelőfelület átalakítása mellett az új meghívózási
+                    rendszerrel kapcsolatos visszajelzéseiteket, javaslataitokat
+                    is figyelembe vettük. A klasszikus Prémium csomagok mellett
+                    mostantól lehetőség nyílik pontok vásárlására is, amelyet
+                    tetszőleges célokra (kérés kiírása, kérésre szavazás,
+                    meghívó küldése) használhattok fel. Továbbá Prémium
+                    tagsággal rendelkező felhasználóink számára 5000 pontra
+                    csökkentettük a meghívó árát.
+                    <br />
+                    Prémium előfizetés és pontok vásárlása esetén is az oldal
+                    működési költségeihez járultok hozzá.
+                    <br />
+                    Köszönjük eddigi és jövőbeli támogatásotokat!
+                  </div>
+                </div>
+
+                <div class="card-footer text-muted text-center">
+                  Hír létrehozva 2 hete | nCore Staff
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 d-none d-sm-block">
+              <div class="card bg-dark text-light text-center">
+                <div class="text-center">
+                  <img
+                    src="https://ba0a3efb26db67f2.cdn.l7cache.com/proxy/9f1a99d12a66ccee8a76440ab4603c86/https://hessteg.com/wp-content/uploads/2021/07/r_suicidesq.png"
+                    class="asd my-2"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="#!" class="text-danger"
+                      >Az Öngyilkos osztag (2021) - kritika</a
+                    >
+                  </h5>
+                  <p class="card-text text-muted">
+                    James Gunn jött, látott és győzött: elhozta azt a Suicide
+                    Squad filmet, amire mindig is vártunk. Csekkold az év
+                    legjobb blockbusterét! Katt ide >>>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item-group-3 -->
+
+            <hr class="text-light" />
+
+            <div class="col-12 col-sm-8">
+              <div class="card bg-dark text-light">
+                <h5 class="card-header text-end fs-6">
+                  <a href="#!" class="link-light text-decoration-none"
+                    >Hírt olvasottnak jelölni!</a
+                  >
+                </h5>
+
+                <div class="card-body">
+                  <div class="card-text">
+                    Kedves Felhasználóink!
+                    <br />
+                    Szeretett barátunk, kollégánk, aki az oldal fennállása óta
+                    velünk volt és rengeteget dolgozott a közösségért, súlyos
+                    betegségben elhunyt. Ezúton szeretnénk elbúcsúzni tőle.
+                    <br />
+                    Emlékét megőrizzük.
+                  </div>
+                </div>
+
+                <div class="card-footer text-muted text-center">
+                  Hír létrehozva 6 hete | nCore Staff
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 d-none d-sm-block">
+              <div class="card bg-dark text-light text-center">
+                <div class="text-center">
+                  <img
+                    src="https://ba0a3efb26db67f2.cdn.l7cache.com/proxy/cbe28cb3e81e3b263aedf562b57c5e88/https://hessteg.com/wp-content/uploads/2021/07/r_ghostbust.png"
+                    class="asd my-2"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="#!" class="text-danger"
+                      >BREAKING: Itt a Szellemirtók: Az örökség előzetese!</a
+                    >
+                  </h5>
+                  <p class="card-text text-muted">
+                    James Gunn jött, látott és győzött: elhozta azt a Suicide
+                    Squad filmet, amire mindig is vártunk. Csekkold az év
+                    legjobb blockbusterét! Katt ide >>>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
         <!-- Feed section end -->
       </section>
       <!-- Main end -->

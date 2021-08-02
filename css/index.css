@@ -1,5 +1,9 @@
 body {
-  background-color: #121416;
+  background-color: #212529;
+}
+
+.custom-bg {
+  background-color: #2d3339;
 }
 
 .navbar-brand {
@@ -8,4 +12,10 @@ body {
 
 .bigger-icon {
   font-size: 1.25rem;
+}
+
+.asd {
+  width: 8rem;
+  max-width: 100%;
+  height: auto;
 }
