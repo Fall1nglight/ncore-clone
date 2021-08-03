@@ -2,6 +2,14 @@ body {
   background-color: #212529;
 }
 
+.bg-navbar {
+  background-color: #1d161b;
+}
+
+footer > div.container {
+  background-color: #16191d;
+}
+
 .custom-bg {
   background-color: #2d3339;
 }
@@ -14,8 +22,7 @@ body {
   font-size: 1.25rem;
 }
 
-.asd {
+.img-fluid-without-fill {
   width: 8rem;
   max-width: 100%;
-  height: auto;
 }

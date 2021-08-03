@@ -30,7 +30,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark p-3">
+      <nav class="navbar navbar-expand-md navbar-dark bg-navbar fixed-top p-3">
         <div class="container-fluid">
           <a href="#!" class="navbar-brand">nCore</a>
           <button
@@ -100,18 +100,19 @@
     <!-- TODO: 1 menüsör elkészítése vagy meghagyni 2db-ban, mint az eredetiben -->
     <!-- TODO: Navbar html kódjának letisztítása  -->
     <!-- TODO: Navbar menü átdolgozása. Ikonok egy dropdown-ba breakpoint alapján -->
-    <!-- TODO: Padding, margin, background-color összhang -->
 
     <!-- TODO: mainContent -> card layout alkalmazása (ne tűnjön el a hírdetés) -->
     <!-- TODO: font size & family beállítása -->
     <!-- ? Horizontal card style  -->
     <!-- ? hr eltávolítása a kártyáknál -> túl sok elem ismétlés -->
 
+    <!-- TODO | Footer -->
+    <!-- TODO | 2 sávban mainContent (flex megtörése w-100 / 2x row ?) -->
     <!-- Main start -->
-    <main>
+    <main class="mt-5">
       <!-- Navigation section start -->
       <section id="mainMenu">
-        <div class="container custom-bg px-5 pt-5 py-3">
+        <div class="container custom-bg px-5 pt-5 pb-3">
           <div class="nav justify-content-center" id="secondaryNav">
             <a href="#!" class="nav-link link-light">Főoldal</a>
 
@@ -141,11 +142,11 @@
       <!-- Feed section start -->
       <section id="feed">
         <div class="container custom-bg px-5 py-3">
-          <div class="row g-5 align-items-center">
+          <div class="row row-cols-1 row-cols-sm-2 g-5">
             <!-- Item-group-1 -->
 
-            <div class="col-12 col-sm-8">
-              <div class="card bg-dark text-light">
+            <div class="col-auto col-md-8">
+              <div class="card h-100 bg-dark text-light">
                 <h5 class="card-header text-end fs-6">
                   <a href="#!" class="link-light text-decoration-none"
                     >Hírt olvasottnak jelölni!</a
@@ -175,32 +176,32 @@
               </div>
             </div>
 
-            <div class="col-4 d-none d-sm-block">
-              <div class="card bg-dark text-light text-center">
-                <div class="text-center">
-                  <img
-                    src="https://ba0a3efb26db67f2.cdn.l7cache.com/proxy/03f314311adf42b28d9cd97d11ce136b/https://hessteg.com/wp-content/uploads/2021/07/r_ido.png"
-                    class="asd my-2"
-                  />
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    <a href="#!" class="text-danger">Idö (2021) - kritika</a>
-                  </h5>
-                  <p class="card-text text-muted">
-                    M. Night Shyamalan új filmjétől eldobod az agyad. De a jó
-                    értelemben? Kritikánkból kiderül.
-                  </p>
+            <div class="col-auto col-md-4">
+              <div class="card h-100 bg-dark text-light text-center">
+                <div class="card-body d-flex align-items-center">
+                  <div>
+                    <div class="text-center">
+                      <img
+                        src="https://ba0a3efb26db67f2.cdn.l7cache.com/proxy/03f314311adf42b28d9cd97d11ce136b/https://hessteg.com/wp-content/uploads/2021/07/r_ido.png"
+                        class="img-fluid-without-fill my-2"
+                      />
+                    </div>
+                    <h5 class="card-title">
+                      <a href="#!" class="text-danger">Idö (2021) - kritika</a>
+                    </h5>
+                    <p class="card-text text-muted">
+                      M. Night Shyamalan új filmjétől eldobod az agyad. De a jó
+                      értelemben? Kritikánkból kiderül.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Item-group-2 -->
 
-            <hr class="text-light" />
-
-            <div class="col-12 col-sm-8">
-              <div class="card bg-dark text-light">
+            <div class="col-auto col-md-8">
+              <div class="card h-100 bg-dark text-light">
                 <h5 class="card-header text-end fs-6">
                   <a href="#!" class="link-light text-decoration-none"
                     >Hírt olvasottnak jelölni!</a
@@ -243,42 +244,42 @@
               </div>
             </div>
 
-            <div class="col-4 d-none d-sm-block">
-              <div class="card bg-dark text-light text-center">
-                <div class="text-center">
-                  <img
-                    src="https://ba0a3efb26db67f2.cdn.l7cache.com/proxy/9f1a99d12a66ccee8a76440ab4603c86/https://hessteg.com/wp-content/uploads/2021/07/r_suicidesq.png"
-                    class="asd my-2"
-                  />
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    <a href="#!" class="text-danger"
-                      >Az Öngyilkos osztag (2021) - kritika</a
-                    >
-                  </h5>
-                  <p class="card-text text-muted">
-                    James Gunn jött, látott és győzött: elhozta azt a Suicide
-                    Squad filmet, amire mindig is vártunk. Csekkold az év
-                    legjobb blockbusterét! Katt ide >>>
-                  </p>
+            <div class="col-auto col-md-4">
+              <div class="card h-100 bg-dark text-light text-center">
+                <div class="card-body d-flex align-items-center">
+                  <div>
+                    <div class="text-center">
+                      <img
+                        src="https://ba0a3efb26db67f2.cdn.l7cache.com/proxy/9f1a99d12a66ccee8a76440ab4603c86/https://hessteg.com/wp-content/uploads/2021/07/r_suicidesq.png"
+                        class="img-fluid-without-fill my-2"
+                      />
+                    </div>
+                    <h5 class="card-title">
+                      <a href="#!" class="text-danger"
+                        >Az Öngyilkos osztag (2021) - kritika</a
+                      >
+                    </h5>
+                    <p class="card-text text-muted">
+                      James Gunn jött, látott és győzött: elhozta azt a Suicide
+                      Squad filmet, amire mindig is vártunk. Csekkold az év
+                      legjobb blockbusterét! Katt ide >>>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Item-group-3 -->
 
-            <hr class="text-light" />
-
-            <div class="col-12 col-sm-8">
-              <div class="card bg-dark text-light">
+            <div class="col-auto col-md-8">
+              <div class="card h-100 bg-dark text-light">
                 <h5 class="card-header text-end fs-6">
                   <a href="#!" class="link-light text-decoration-none"
                     >Hírt olvasottnak jelölni!</a
                   >
                 </h5>
 
-                <div class="card-body">
+                <div class="card-body d-flex align-items-center">
                   <div class="card-text">
                     Kedves Felhasználóink!
                     <br />
@@ -296,25 +297,27 @@
               </div>
             </div>
 
-            <div class="col-4 d-none d-sm-block">
-              <div class="card bg-dark text-light text-center">
-                <div class="text-center">
-                  <img
-                    src="https://ba0a3efb26db67f2.cdn.l7cache.com/proxy/cbe28cb3e81e3b263aedf562b57c5e88/https://hessteg.com/wp-content/uploads/2021/07/r_ghostbust.png"
-                    class="asd my-2"
-                  />
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">
-                    <a href="#!" class="text-danger"
-                      >BREAKING: Itt a Szellemirtók: Az örökség előzetese!</a
-                    >
-                  </h5>
-                  <p class="card-text text-muted">
-                    James Gunn jött, látott és győzött: elhozta azt a Suicide
-                    Squad filmet, amire mindig is vártunk. Csekkold az év
-                    legjobb blockbusterét! Katt ide >>>
-                  </p>
+            <div class="col-auto col-md-4">
+              <div class="card h-100 bg-dark text-light text-center">
+                <div class="card-body d-flex align-items-center">
+                  <div>
+                    <div class="text-center">
+                      <img
+                        src="https://ba0a3efb26db67f2.cdn.l7cache.com/proxy/cbe28cb3e81e3b263aedf562b57c5e88/https://hessteg.com/wp-content/uploads/2021/07/r_ghostbust.png"
+                        class="img-fluid-without-fill my-2"
+                      />
+                    </div>
+                    <h5 class="card-title">
+                      <a href="#!" class="text-danger"
+                        >BREAKING: Itt a Szellemirtók: Az örökség előzetese!</a
+                      >
+                    </h5>
+                    <p class="card-text text-muted">
+                      James Gunn jött, látott és győzött: elhozta azt a Suicide
+                      Squad filmet, amire mindig is vártunk. Csekkold az év
+                      legjobb blockbusterét! Katt ide >>>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -325,5 +328,30 @@
       </section>
       <!-- Main end -->
     </main>
+
+    <footer>
+      <div class="container p-5">
+        <section class="d-flex flex-column align-items-center text-light">
+          <div class="p-1">
+            <a href="#!" class="link-light me-4"
+              ><i class="bi bi-facebook bigger-icon"></i
+            ></a>
+            <a href="#!" class="link-light me-4"
+              ><i class="bi bi-twitter bigger-icon"></i
+            ></a>
+            <a href="#!" class="link-light me-4"
+              ><i class="bi bi-google bigger-icon"></i
+            ></a>
+            <a href="#!" class="link-light me-4"
+              ><i class="bi bi-instagram bigger-icon"></i
+            ></a>
+          </div>
+          <hr class="text-light w-50" />
+          <div class="p-1 fs-4 text-center">
+            &copy; 2021 Copyright: ncore-clone.sh
+          </div>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
