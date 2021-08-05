@@ -1,21 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:ital,wght@1,700&display=swap');
+
+#secondaryNav > a,
+#secondarySmallNav > li > a,
+#secondarySmallNav > li > ul > li > a,
+#navMenu {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-brand {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
 body {
-  background-color: #212529;
+  background-color: #21212c;
+  /*   background-image: url('../img//celebration.png');
+ */
+}
+
+footer > .container {
+  background-color: #16191d;
 }
 
 .bg-navbar {
   background-color: #1d161b;
 }
 
-footer > div.container {
-  background-color: #16191d;
-}
-
 .custom-bg {
   background-color: #2d3339;
-}
-
-.navbar-brand {
-  font-family: 'Montserrat Alternates', sans-serif;
+  background-color: #39302d;
 }
 
 .bigger-icon {
@@ -25,4 +37,46 @@ footer > div.container {
 .img-fluid-without-fill {
   width: 8rem;
   max-width: 100%;
+}
+
+.card-text {
+  font-size: 1.05rem;
+}
+
+.carousel-item > img {
+  height: 30rem;
+}
+
+@media (min-width: 768px) {
+  .carousel-item > img {
+    height: 20rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-item > img {
+    height: 30rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel-item > img {
+    height: 35rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .carousel-item > img {
+    height: 40rem;
+  }
+}
+
+#secondaryNav > a {
+  background: linear-gradient(currentColor 0 0) bottom / var(--d, 0) 3px
+    no-repeat;
+  transition: 0.5s;
+}
+
+#secondaryNav > a:hover {
+  --d: 100%;
 }

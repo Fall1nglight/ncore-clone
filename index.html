@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,12 +15,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,700&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
@@ -42,54 +36,74 @@
             <span class="bi bi-list-nested bigger-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a href="#!" class="nav-link">Fall1ngLight (Tag)</a>
-              </li>
-              <li class="nav-item">
-                <a href="#!" class="nav-link">Pontok: 2633</a>
-              </li>
-              <li class="nav-item">
-                <a href="#!" class="nav-link">Fel: 10.98TiB</a>
-              </li>
-              <li class="nav-item">
-                <a href="#!" class="nav-link">Helyezés: 408788.</a>
-              </li>
-            </ul>
+            <ul class="navbar-nav ms-auto me-md-5">
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  >Fall1ngLight (tag)</a
+                >
 
-            <ul class="d-flex navbar-nav">
-              <a href="#!" class="nav-link"
-                ><i class="bi bi-list-ul bigger-icon"></i>
-              </a>
-
-              <li class="nav-item">
-                <a href="#!" class="nav-link"
-                  ><i class="bi bi-person-fill bigger-icon"></i>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="#!" class="nav-link"
-                  ><i class="bi bi-star-fill bigger-icon"></i>
-                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#!" class="dropdown-item">Pontok: 2633</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="dropdown-item">Fel: 10.98TiB</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="dropdown-item">Helyezés: 408788.</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a href="#!" class="dropdown-item">Kilépés</a></li>
+                </ul>
               </li>
 
-              <li class="nav-item">
-                <a href="#!" class="nav-link"
-                  ><i class="bi bi-gear-wide bigger-icon"></i>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="#!" class="nav-link"
-                  ><i class="bi bi-inbox-fill bigger-icon"></i>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="#!" class="nav-link">
-                  <i class="bi bi-plus-circle-dotted bigger-icon"></i>
-                </a>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  >Beállítások</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#!" class="dropdown-item"
+                      ><i class="bi bi-list-ul bigger-icon"></i> Torrentek
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!" class="dropdown-item"
+                      ><i class="bi bi-gear-wide bigger-icon"></i> Profil</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#!" class="dropdown-item"
+                      ><i class="bi bi-person-fill bigger-icon"></i> Barátok</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#!" class="dropdown-item">
+                      <i class="bi bi-star-fill bigger-icon"></i> Könyvjelzők</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#!" class="dropdown-item"
+                      ><i class="bi bi-inbox-fill bigger-icon"></i> Üzenetek</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#!" class="dropdown-item"
+                      ><i class="bi bi-plus-circle-dotted bigger-icon"></i>
+                      Meghívók</a
+                    >
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -97,23 +111,100 @@
       </nav>
     </header>
 
-    <!-- TODO: 1 menüsör elkészítése vagy meghagyni 2db-ban, mint az eredetiben -->
-    <!-- TODO: Navbar html kódjának letisztítása  -->
-    <!-- TODO: Navbar menü átdolgozása. Ikonok egy dropdown-ba breakpoint alapján -->
+    <!-- TODO: 1st dropdown's elements need highlighting -->
+    <!-- TODO: Set background color at sm-breakpoint -->
+    <!-- TODO: Padding-bottom-5 OFF when >md -->
+    <!-- TODO: check margins & paddings -->
+    <!-- TODO: switch secondNav with carousel because navbar must be at the top -->
 
-    <!-- TODO: mainContent -> card layout alkalmazása (ne tűnjön el a hírdetés) -->
-    <!-- TODO: font size & family beállítása -->
-    <!-- ? Horizontal card style  -->
-    <!-- ? hr eltávolítása a kártyáknál -> túl sok elem ismétlés -->
+    <!-- ? Styling, hover color -->
+    <!-- ? Carousel switch place with secondNav -->
+    <!-- ? CSS blend -->
+    <!-- ? 1st nav badge -->
 
-    <!-- TODO | Footer -->
-    <!-- TODO | 2 sávban mainContent (flex megtörése w-100 / 2x row ?) -->
     <!-- Main start -->
     <main class="mt-5">
+      <section id="carousel-section" class="d-none d-md-block">
+        <div class="container custom-bg px-0 py-3 pb-4">
+          <div
+            class="carousel slide carousel-fade"
+            id="carousel"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="img/ad/demonic-2021.jpg"
+                  class="d-block w-100"
+                  alt="Demonic (2021)"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/ad/ghostbusters_afterlife-2021.jpg"
+                  class="d-block w-100"
+                  alt="Ghost Busters - Afterlife (2021)"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/ad/suicide-squad-2.jpg"
+                  class="d-block w-100"
+                  alt="Suicide Squad 2 (2021)"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/ad/venom-2.jpg"
+                  class="d-block w-100"
+                  alt="Venom 2 (2021)"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/ad/old-2021.jpg"
+                  class="d-block w-100"
+                  alt="Old (2021)"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
       <!-- Navigation section start -->
       <section id="mainMenu">
-        <div class="container custom-bg px-5 pt-5 pb-3">
-          <div class="nav justify-content-center" id="secondaryNav">
+        <div class="container custom-bg px-5 pt-5 pb-0 pb-md-3">
+          <hr class="text-light d-none d-md-block" />
+
+          <div
+            class="nav justify-content-center d-none d-md-flex"
+            id="secondaryNav"
+          >
             <a href="#!" class="nav-link link-light">Főoldal</a>
 
             <a href="#!" class="nav-link link-light">Letöltés</a>
@@ -131,30 +222,63 @@
             <a href="#!" class="nav-link link-light">Felhasználók</a>
 
             <a href="#!" class="nav-link link-light">Helpdesk</a>
-
-            <a href="#!" class="nav-link link-light">Kilépés</a>
           </div>
-          <hr class="text-light" />
+
+          <ul
+            class="
+              nav nav-tabs
+              d-flex d-md-none
+              justify-content-center justify-content-sm-start
+            "
+            id="secondarySmallNav"
+          >
+            <li class="nav-item">
+              <a href="#!" class="nav-link link-light">Főoldal</a>
+            </li>
+            <li class="nav-item dropdown ms-sm-auto">
+              <a
+                href="#"
+                class="nav-link link-light dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                >További oldalak</a
+              >
+              <ul class="dropdown-menu text-center">
+                <li><a href="#!" class="dropdown-item">Letöltés</a></li>
+                <li><a href="#!" class="dropdown-item">Feltöltés</a></li>
+                <li><a href="#!" class="dropdown-item">Kérések</a></li>
+                <li><a href="#!" class="dropdown-item">Ajánló</a></li>
+                <li><a href="#!" class="dropdown-item">Fórum</a></li>
+                <li><a href="#!" class="dropdown-item">Wiki</a></li>
+                <li><a href="#!" class="dropdown-item">Felhasználók</a></li>
+                <li><a href="#!" class="dropdown-item">Helpdesk</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <hr class="text-light d-none d-md-block" />
         </div>
         <!-- Navigation section end -->
       </section>
 
       <!-- Feed section start -->
       <section id="feed">
-        <div class="container custom-bg px-5 py-3">
-          <div class="row row-cols-1 row-cols-sm-2 g-5">
+        <div class="container custom-bg px-5 pt-5 pb-5">
+          <div class="row row-cols-1 g-5">
             <!-- Item-group-1 -->
 
-            <div class="col-auto col-md-8">
+            <div class="col-auto">
               <div class="card h-100 bg-dark text-light">
-                <h5 class="card-header text-end fs-6">
+                <h5 class="card-header text-end fw-normal fs-6">
                   <a href="#!" class="link-light text-decoration-none"
                     >Hírt olvasottnak jelölni!</a
                   >
                 </h5>
 
                 <div class="card-body">
-                  <div class="card-title h5 mb-3">- Nyári kvízek 2021 -</div>
+                  <div class="card-title fw-light h5 mb-3">
+                    - Nyári kvízek 2021 -
+                  </div>
                   <div class="card-text">
                     Kedves Felhasználóink!
                     <br />
@@ -170,46 +294,24 @@
                   </div>
                 </div>
 
-                <div class="card-footer text-muted text-center">
+                <div class="card-footer text-muted">
                   Hír létrehozva 6 napja | nCore Staff
-                </div>
-              </div>
-            </div>
-
-            <div class="col-auto col-md-4">
-              <div class="card h-100 bg-dark text-light text-center">
-                <div class="card-body d-flex align-items-center">
-                  <div>
-                    <div class="text-center">
-                      <img
-                        src="https://ba0a3efb26db67f2.cdn.l7cache.com/proxy/03f314311adf42b28d9cd97d11ce136b/https://hessteg.com/wp-content/uploads/2021/07/r_ido.png"
-                        class="img-fluid-without-fill my-2"
-                      />
-                    </div>
-                    <h5 class="card-title">
-                      <a href="#!" class="text-danger">Idö (2021) - kritika</a>
-                    </h5>
-                    <p class="card-text text-muted">
-                      M. Night Shyamalan új filmjétől eldobod az agyad. De a jó
-                      értelemben? Kritikánkból kiderül.
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Item-group-2 -->
 
-            <div class="col-auto col-md-8">
+            <div class="col-auto">
               <div class="card h-100 bg-dark text-light">
-                <h5 class="card-header text-end fs-6">
+                <h5 class="card-header text-end fw-normal fs-6">
                   <a href="#!" class="link-light text-decoration-none"
                     >Hírt olvasottnak jelölni!</a
                   >
                 </h5>
 
                 <div class="card-body">
-                  <div class="card-title h5 mb-3">
+                  <div class="card-title fw-light h5 mb-3">
                     - Prémium változások és további fejlesztések -
                   </div>
                   <div class="card-text">
@@ -238,42 +340,17 @@
                   </div>
                 </div>
 
-                <div class="card-footer text-muted text-center">
+                <div class="card-footer text-muted">
                   Hír létrehozva 2 hete | nCore Staff
-                </div>
-              </div>
-            </div>
-
-            <div class="col-auto col-md-4">
-              <div class="card h-100 bg-dark text-light text-center">
-                <div class="card-body d-flex align-items-center">
-                  <div>
-                    <div class="text-center">
-                      <img
-                        src="https://ba0a3efb26db67f2.cdn.l7cache.com/proxy/9f1a99d12a66ccee8a76440ab4603c86/https://hessteg.com/wp-content/uploads/2021/07/r_suicidesq.png"
-                        class="img-fluid-without-fill my-2"
-                      />
-                    </div>
-                    <h5 class="card-title">
-                      <a href="#!" class="text-danger"
-                        >Az Öngyilkos osztag (2021) - kritika</a
-                      >
-                    </h5>
-                    <p class="card-text text-muted">
-                      James Gunn jött, látott és győzött: elhozta azt a Suicide
-                      Squad filmet, amire mindig is vártunk. Csekkold az év
-                      legjobb blockbusterét! Katt ide >>>
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Item-group-3 -->
 
-            <div class="col-auto col-md-8">
+            <div class="col-auto">
               <div class="card h-100 bg-dark text-light">
-                <h5 class="card-header text-end fs-6">
+                <h5 class="card-header text-end fw-normal fs-6">
                   <a href="#!" class="link-light text-decoration-none"
                     >Hírt olvasottnak jelölni!</a
                   >
@@ -291,33 +368,8 @@
                   </div>
                 </div>
 
-                <div class="card-footer text-muted text-center">
+                <div class="card-footer text-muted">
                   Hír létrehozva 6 hete | nCore Staff
-                </div>
-              </div>
-            </div>
-
-            <div class="col-auto col-md-4">
-              <div class="card h-100 bg-dark text-light text-center">
-                <div class="card-body d-flex align-items-center">
-                  <div>
-                    <div class="text-center">
-                      <img
-                        src="https://ba0a3efb26db67f2.cdn.l7cache.com/proxy/cbe28cb3e81e3b263aedf562b57c5e88/https://hessteg.com/wp-content/uploads/2021/07/r_ghostbust.png"
-                        class="img-fluid-without-fill my-2"
-                      />
-                    </div>
-                    <h5 class="card-title">
-                      <a href="#!" class="text-danger"
-                        >BREAKING: Itt a Szellemirtók: Az örökség előzetese!</a
-                      >
-                    </h5>
-                    <p class="card-text text-muted">
-                      James Gunn jött, látott és győzött: elhozta azt a Suicide
-                      Squad filmet, amire mindig is vártunk. Csekkold az év
-                      legjobb blockbusterét! Katt ide >>>
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
