@@ -13,8 +13,10 @@
 
 body {
   background-color: #21212c;
-  /*   background-image: url('../img//celebration.png');
- */
+}
+
+main {
+  margin-top: 4.5rem !important;
 }
 
 footer > .container {
@@ -43,31 +45,29 @@ footer > .container {
   font-size: 1.05rem;
 }
 
-.carousel-item > img {
-  height: 30rem;
+.custom-size {
+  height: 8rem;
+  width: 8rem;
+  max-width: 100%;
+}
+
+.custom-card-bg {
+  background-color: #9e9e9e;
+}
+
+.custom-card-size {
+  height: 20rem;
+}
+
+@media (min-width: 576px) {
+  .custom-card-size {
+    height: 22rem;
+  }
 }
 
 @media (min-width: 768px) {
-  .carousel-item > img {
-    height: 20rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .carousel-item > img {
-    height: 30rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .carousel-item > img {
-    height: 35rem;
-  }
-}
-
-@media (min-width: 1400px) {
-  .carousel-item > img {
-    height: 40rem;
+  .custom-card-size {
+    height: 16rem;
   }
 }
 
@@ -78,5 +78,9 @@ footer > .container {
 }
 
 #secondaryNav > a:hover {
+  --d: 100%;
+}
+
+#secondaryNav > a.active {
   --d: 100%;
 }
