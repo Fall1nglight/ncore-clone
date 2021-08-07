@@ -1,5 +1,5 @@
 # 🎲 nCore-clone
-Másolat a hivatalos [nCore](https://ncore.pro) weboldalról.
+Másolat a hivatalos [nCore](https://ncore.pro) weboldalról.  
 Megtekinthető a [következő](http://ncore-clone.surge.sh) oldalon.
 
 # 📝 Mivel készült?
