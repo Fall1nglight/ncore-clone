@@ -1,4 +1,5 @@
-[nCore-Clone]
+#nCore-clone
+Másolat a hivatalos [nCore](https://ncore.pro) weboldalról.
 
-Másolat a hivtalos 'https://ncore.pro/' oldalról.
-Bootstrap 5-al átalakítva teljesen responsive-ra.
+#Mivel készült?
+A projekt egyszerű HTML, CSS és Bootstrap 5 segítségével készült.
