@@ -7,4 +7,4 @@ A projekt HTML, CSS és Bootstrap 5 segítségével készült.
 
 # ❔ Projekt célja
 * Ismerkedni szerettem volna egy minimálisan összetett szerkezetű weboldal felépítésével.
-* Tökéletes gyakorlást biztosított, ezáltal közelebb kerültem a Bootstrap 5 keretrendszerhez.
+* A projekt folyamata tökéletes gyakorlást biztosított, ezáltal közelebb kerültem a Bootstrap 5 keretrendszerhez.
